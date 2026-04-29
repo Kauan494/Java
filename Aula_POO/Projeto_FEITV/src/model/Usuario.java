@@ -5,7 +5,11 @@ public class Usuario {
     private String nome;
     private String user;
     private String senha;
-
+    
+    
+    public Usuario(){
+        
+    }
     public Usuario(String nome, String user, String senha) {
         this.nome = nome;
         this.user = user;
@@ -24,6 +28,19 @@ public class Usuario {
         return senha;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+    
+    
     
     
     

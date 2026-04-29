@@ -65,6 +65,31 @@ public class Tela_principal extends javax.swing.JFrame {
         btn_favoritar2 = new javax.swing.JButton();
         btn_favoritar3 = new javax.swing.JButton();
         btn_favoritar4 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel13 = new javax.swing.JPanel();
+        btn_curtir5 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        btn_deslike5 = new javax.swing.JButton();
+        btn_favoritar5 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        btn_curtir6 = new javax.swing.JButton();
+        btn_deslike6 = new javax.swing.JButton();
+        btn_favoritar6 = new javax.swing.JButton();
+        btn_favoritar7 = new javax.swing.JButton();
+        btn_deslike7 = new javax.swing.JButton();
+        btn_curtir7 = new javax.swing.JButton();
+        btn_curtir8 = new javax.swing.JButton();
+        btn_deslike8 = new javax.swing.JButton();
+        btn_favoritar8 = new javax.swing.JButton();
+        btn_curtir9 = new javax.swing.JButton();
+        btn_deslike9 = new javax.swing.JButton();
+        btn_favoritar9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -302,61 +327,181 @@ public class Tela_principal extends javax.swing.JFrame {
         btn_favoritar4.setFocusPainted(false);
         btn_favoritar4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar.png"))); // NOI18N
 
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        btn_curtir5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like2.png"))); // NOI18N
+        btn_curtir5.setBorderPainted(false);
+        btn_curtir5.setContentAreaFilled(false);
+        btn_curtir5.setFocusPainted(false);
+        btn_curtir5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like.png"))); // NOI18N
+        btn_curtir5.addActionListener(this::btn_curtir5ActionPerformed);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Coringa");
+
+        btn_deslike5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike2.png"))); // NOI18N
+        btn_deslike5.setBorderPainted(false);
+        btn_deslike5.setContentAreaFilled(false);
+        btn_deslike5.setFocusPainted(false);
+        btn_deslike5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike.png"))); // NOI18N
+
+        btn_favoritar5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar2.png"))); // NOI18N
+        btn_favoritar5.setBorderPainted(false);
+        btn_favoritar5.setContentAreaFilled(false);
+        btn_favoritar5.setFocusPainted(false);
+        btn_favoritar5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar.png"))); // NOI18N
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Shrek");
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Corra");
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Mário");
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Carros 2");
+
+        btn_curtir6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like2.png"))); // NOI18N
+        btn_curtir6.setBorderPainted(false);
+        btn_curtir6.setContentAreaFilled(false);
+        btn_curtir6.setFocusPainted(false);
+        btn_curtir6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like.png"))); // NOI18N
+        btn_curtir6.addActionListener(this::btn_curtir6ActionPerformed);
+
+        btn_deslike6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike2.png"))); // NOI18N
+        btn_deslike6.setBorderPainted(false);
+        btn_deslike6.setContentAreaFilled(false);
+        btn_deslike6.setFocusPainted(false);
+        btn_deslike6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike.png"))); // NOI18N
+
+        btn_favoritar6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar2.png"))); // NOI18N
+        btn_favoritar6.setBorderPainted(false);
+        btn_favoritar6.setContentAreaFilled(false);
+        btn_favoritar6.setFocusPainted(false);
+        btn_favoritar6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar.png"))); // NOI18N
+
+        btn_favoritar7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar2.png"))); // NOI18N
+        btn_favoritar7.setBorderPainted(false);
+        btn_favoritar7.setContentAreaFilled(false);
+        btn_favoritar7.setFocusPainted(false);
+        btn_favoritar7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar.png"))); // NOI18N
+
+        btn_deslike7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike2.png"))); // NOI18N
+        btn_deslike7.setBorderPainted(false);
+        btn_deslike7.setContentAreaFilled(false);
+        btn_deslike7.setFocusPainted(false);
+        btn_deslike7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike.png"))); // NOI18N
+
+        btn_curtir7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like2.png"))); // NOI18N
+        btn_curtir7.setBorderPainted(false);
+        btn_curtir7.setContentAreaFilled(false);
+        btn_curtir7.setFocusPainted(false);
+        btn_curtir7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like.png"))); // NOI18N
+        btn_curtir7.addActionListener(this::btn_curtir7ActionPerformed);
+
+        btn_curtir8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like2.png"))); // NOI18N
+        btn_curtir8.setBorderPainted(false);
+        btn_curtir8.setContentAreaFilled(false);
+        btn_curtir8.setFocusPainted(false);
+        btn_curtir8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like.png"))); // NOI18N
+        btn_curtir8.addActionListener(this::btn_curtir8ActionPerformed);
+
+        btn_deslike8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike2.png"))); // NOI18N
+        btn_deslike8.setBorderPainted(false);
+        btn_deslike8.setContentAreaFilled(false);
+        btn_deslike8.setFocusPainted(false);
+        btn_deslike8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike.png"))); // NOI18N
+
+        btn_favoritar8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar2.png"))); // NOI18N
+        btn_favoritar8.setBorderPainted(false);
+        btn_favoritar8.setContentAreaFilled(false);
+        btn_favoritar8.setFocusPainted(false);
+        btn_favoritar8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar.png"))); // NOI18N
+
+        btn_curtir9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like2.png"))); // NOI18N
+        btn_curtir9.setBorderPainted(false);
+        btn_curtir9.setContentAreaFilled(false);
+        btn_curtir9.setFocusPainted(false);
+        btn_curtir9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_like.png"))); // NOI18N
+        btn_curtir9.addActionListener(this::btn_curtir9ActionPerformed);
+
+        btn_deslike9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike2.png"))); // NOI18N
+        btn_deslike9.setBorderPainted(false);
+        btn_deslike9.setContentAreaFilled(false);
+        btn_deslike9.setFocusPainted(false);
+        btn_deslike9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_deslike.png"))); // NOI18N
+        btn_deslike9.addActionListener(this::btn_deslike9ActionPerformed);
+
+        btn_favoritar9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar2.png"))); // NOI18N
+        btn_favoritar9.setBorderPainted(false);
+        btn_favoritar9.setContentAreaFilled(false);
+        btn_favoritar9.setFocusPainted(false);
+        btn_favoritar9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Icon_favoritar.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addComponent(btn_curtir)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_deslike)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_favoritar)))
-                .addGap(45, 45, 45)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addComponent(btn_curtir1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel12Layout.createSequentialGroup()
-                                        .addComponent(btn_curtir2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_deslike2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_favoritar2)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel12Layout.createSequentialGroup()
-                                        .addComponent(btn_curtir3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_deslike3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_favoritar3)))
-                                .addGap(29, 29, 29)
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel12Layout.createSequentialGroup()
-                                        .addComponent(btn_curtir4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_deslike4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_favoritar4))
-                                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(120, 120, 120))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jLabel7)
@@ -375,6 +520,121 @@ public class Tela_principal extends javax.swing.JFrame {
                         .addGap(95, 95, 95)
                         .addComponent(jLabel5)))
                 .addGap(162, 162, 162))
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addComponent(btn_curtir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_deslike)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_favoritar))
+                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addComponent(btn_curtir5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_deslike5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_favoritar5)))
+                .addGap(45, 45, 45)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(31, 31, 31)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel12Layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                                .addComponent(btn_curtir2)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_deslike2)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_favoritar2)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addGroup(jPanel12Layout.createSequentialGroup()
+                                                        .addComponent(btn_curtir7)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(btn_deslike7)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(btn_favoritar7))
+                                                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(30, 30, 30))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                                                .addComponent(jLabel12)
+                                                .addGap(52, 52, 52)))))
+                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel12Layout.createSequentialGroup()
+                                        .addGap(32, 32, 32)
+                                        .addComponent(jLabel9)
+                                        .addGap(88, 88, 88)
+                                        .addComponent(jLabel10))
+                                    .addGroup(jPanel12Layout.createSequentialGroup()
+                                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                                .addComponent(btn_curtir3)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_deslike3)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_favoritar3))
+                                            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addComponent(btn_curtir8)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_deslike9)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_favoritar8)))
+                                        .addGap(27, 27, 27)
+                                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                                .addComponent(btn_curtir4)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_deslike4)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_favoritar4))
+                                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addComponent(btn_curtir9)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_deslike8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_favoritar9)))))
+                                .addGap(118, 118, 118))))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(btn_curtir6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_deslike6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_favoritar6))
+                            .addComponent(btn_curtir1))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jLabel8)
+                .addGap(99, 99, 99)
+                .addComponent(jLabel11)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -414,7 +674,39 @@ public class Tela_principal extends javax.swing.JFrame {
                     .addComponent(btn_favoritar2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_favoritar3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_favoritar4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11)
+                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel12)
+                        .addComponent(jLabel9)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn_curtir5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_deslike5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_favoritar5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_curtir6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_deslike6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_favoritar6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_favoritar7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_deslike7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_curtir7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_curtir8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_favoritar8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_curtir9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_deslike8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_deslike9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_favoritar9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(100, 100, 100))
         );
 
         jScrollPane1.setViewportView(jPanel12);
@@ -486,6 +778,30 @@ public class Tela_principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_curtir1ActionPerformed
 
+    private void btn_curtir5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_curtir5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_curtir5ActionPerformed
+
+    private void btn_curtir6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_curtir6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_curtir6ActionPerformed
+
+    private void btn_curtir7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_curtir7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_curtir7ActionPerformed
+
+    private void btn_curtir8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_curtir8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_curtir8ActionPerformed
+
+    private void btn_curtir9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_curtir9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_curtir9ActionPerformed
+
+    private void btn_deslike9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_deslike9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_deslike9ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -518,34 +834,59 @@ public class Tela_principal extends javax.swing.JFrame {
     private javax.swing.JButton btn_curtir2;
     private javax.swing.JButton btn_curtir3;
     private javax.swing.JButton btn_curtir4;
+    private javax.swing.JButton btn_curtir5;
+    private javax.swing.JButton btn_curtir6;
+    private javax.swing.JButton btn_curtir7;
+    private javax.swing.JButton btn_curtir8;
+    private javax.swing.JButton btn_curtir9;
     private javax.swing.JButton btn_descurtidos;
     private javax.swing.JButton btn_deslike;
     private javax.swing.JButton btn_deslike1;
     private javax.swing.JButton btn_deslike2;
     private javax.swing.JButton btn_deslike3;
     private javax.swing.JButton btn_deslike4;
+    private javax.swing.JButton btn_deslike5;
+    private javax.swing.JButton btn_deslike6;
+    private javax.swing.JButton btn_deslike7;
+    private javax.swing.JButton btn_deslike8;
+    private javax.swing.JButton btn_deslike9;
     private javax.swing.JButton btn_favoritar;
     private javax.swing.JButton btn_favoritar1;
     private javax.swing.JButton btn_favoritar2;
     private javax.swing.JButton btn_favoritar3;
     private javax.swing.JButton btn_favoritar4;
+    private javax.swing.JButton btn_favoritar5;
+    private javax.swing.JButton btn_favoritar6;
+    private javax.swing.JButton btn_favoritar7;
+    private javax.swing.JButton btn_favoritar8;
+    private javax.swing.JButton btn_favoritar9;
     private javax.swing.JButton btn_favoritos;
     private javax.swing.JButton btn_pesquisar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
