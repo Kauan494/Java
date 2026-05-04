@@ -1,28 +1,66 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package view;
 
-import javax.swing.JOptionPane;
+import controller.ControleLogin;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 
 
-/**
- *
- * @author katym
- */
 public class Tela_login extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Tela_login.class.getName());
-
-    /**
-     * Creates new form Tela_login
-     */
+    
     public Tela_login() {
         initComponents();
         setLocationRelativeTo(null);
+        c = new ControleLogin(this);
     }
+
+    public JTextField getSenha() {
+        return Senha;
+    }
+
+    public void setSenha(JTextField Senha) {
+        this.Senha = Senha;
+    }
+
+    
+
+    public JTextField getUsuario() {
+        return Usuario;
+    }
+
+    public void setUsuario(JTextField Usuario) {
+        this.Usuario = Usuario;
+    }
+
+    public JButton getBtn_login() {
+        return btn_login;
+    }
+
+    public void setBtn_login(JButton btn_login) {
+        this.btn_login = btn_login;
+    }
+
+    public JLabel getLblUsuario() {
+        return lblUsuario;
+    }
+
+    public void setLblUsuario(JLabel lblUsuario) {
+        this.lblUsuario = lblUsuario;
+    }
+
+    public JLabel getLblsenha() {
+        return lblsenha;
+    }
+
+    public void setLblsenha(JLabel lblsenha) {
+        this.lblsenha = lblsenha;
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,12 +73,12 @@ public class Tela_login extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblUsuario = new javax.swing.JLabel();
         Usuario = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        Senha = new javax.swing.JPasswordField();
+        lblsenha = new javax.swing.JLabel();
         btn_login = new javax.swing.JButton();
         btn_cancelar = new javax.swing.JButton();
+        Senha = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Tela de login");
@@ -52,17 +90,15 @@ public class Tela_login extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(200, 40, 40));
         jLabel3.setText("Tela de Login");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(200, 40, 40));
-        jLabel1.setText("User");
+        lblUsuario.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        lblUsuario.setForeground(new java.awt.Color(200, 40, 40));
+        lblUsuario.setText("User");
 
         Usuario.addActionListener(this::UsuarioActionPerformed);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(200, 40, 40));
-        jLabel2.setText("Senha");
-
-        Senha.addActionListener(this::SenhaActionPerformed);
+        lblsenha.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        lblsenha.setForeground(new java.awt.Color(200, 40, 40));
+        lblsenha.setText("Senha");
 
         btn_login.setBackground(new java.awt.Color(200, 40, 40));
         btn_login.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
@@ -88,12 +124,12 @@ public class Tela_login extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel2))
+                                    .addComponent(lblUsuario)
+                                    .addComponent(lblsenha))
                                 .addGap(32, 32, 32)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(Senha, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(Usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
+                                    .addComponent(Senha)))
                             .addComponent(btn_login))))
                 .addContainerGap(134, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -109,11 +145,11 @@ public class Tela_login extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(lblUsuario))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(lblsenha)
+                    .addComponent(Senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_cancelar)
@@ -137,26 +173,12 @@ public class Tela_login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_loginActionPerformed
-         String user = Usuario.getText();
-         String senha = Senha.getText();
-
-         if(user.equals("admin") && senha.equals("123")) {
-            javax.swing.JOptionPane.showMessageDialog(this, "Login feito!");
-            new Tela_inicio().setVisible(true);
-            this.dispose();
-         } else {
-            javax.swing.JOptionPane.showMessageDialog(this, "Erro no login!");
-         }
-        
+         c.loginUsuario();
     }//GEN-LAST:event_btn_loginActionPerformed
 
     private void UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_UsuarioActionPerformed
-
-    private void SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenhaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SenhaActionPerformed
 
     private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
         new Tela_inicio().setVisible(true);
@@ -187,15 +209,16 @@ public class Tela_login extends javax.swing.JFrame {
 //        /* Create and display the form */
 //        java.awt.EventQueue.invokeLater(() -> new Tela_login().setVisible(true));
 //    }
+    private ControleLogin c;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField Senha;
+    private javax.swing.JTextField Senha;
     private javax.swing.JTextField Usuario;
     private javax.swing.JButton btn_cancelar;
     private javax.swing.JButton btn_login;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JLabel lblsenha;
     // End of variables declaration//GEN-END:variables
 }

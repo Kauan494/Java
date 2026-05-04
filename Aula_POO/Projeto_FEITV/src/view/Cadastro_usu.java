@@ -1,21 +1,50 @@
 
 package view;
 
+import controller.ControleCadastro;
+import javax.swing.JButton;
+import javax.swing.JTextField;
 
 public class Cadastro_usu extends javax.swing.JFrame {
-    
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Cadastro_usu.class.getName());
-
-    /**
-     * Creates new form Cadastro_usu
-     */
-    
-  
     
     public Cadastro_usu() {
         initComponents();
         setLocationRelativeTo(null);
+        c = new ControleCadastro(this);
     }
+
+    public JButton getBtn_salvar() {
+        return btn_salvar;
+    }
+
+    public void setBtn_salvar(JButton btn_salvar) {
+        this.btn_salvar = btn_salvar;
+    }
+
+    public JTextField getTxt_1() {
+        return txt_1;
+    }
+
+    public void setTxt_1(JTextField txt_1) {
+        this.txt_1 = txt_1;
+    }
+
+    public JTextField getTxt_2() {
+        return txt_2;
+    }
+
+    public void setTxt_2(JTextField txt_2) {
+        this.txt_2 = txt_2;
+    }
+
+    public JTextField getTxt_3() {
+        return txt_3;
+    }
+
+    public void setTxt_3(JTextField txt_3) {
+        this.txt_3 = txt_3;
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,7 +64,7 @@ public class Cadastro_usu extends javax.swing.JFrame {
         txt_2 = new javax.swing.JTextField();
         lbl4 = new javax.swing.JLabel();
         txt_3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btn_salvar = new javax.swing.JButton();
         btn_voltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,11 +93,11 @@ public class Cadastro_usu extends javax.swing.JFrame {
 
         txt_3.addActionListener(this::txt_3ActionPerformed);
 
-        jButton1.setBackground(new java.awt.Color(200, 40, 40));
-        jButton1.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jButton1.setText("Cadastrar");
-        jButton1.setOpaque(true);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        btn_salvar.setBackground(new java.awt.Color(200, 40, 40));
+        btn_salvar.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        btn_salvar.setText("Cadastrar");
+        btn_salvar.setOpaque(true);
+        btn_salvar.addActionListener(this::btn_salvarActionPerformed);
 
         btn_voltar.setBackground(new java.awt.Color(200, 40, 40));
         btn_voltar.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
@@ -97,7 +126,7 @@ public class Cadastro_usu extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(txt_1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_salvar, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btn_voltar)))
                 .addGap(137, 137, 137))
@@ -121,7 +150,7 @@ public class Cadastro_usu extends javax.swing.JFrame {
                     .addComponent(lbl4))
                 .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(btn_salvar)
                     .addComponent(btn_voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
@@ -150,10 +179,9 @@ public class Cadastro_usu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btn_salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvarActionPerformed
+        c.salvarUsu();   
+    }//GEN-LAST:event_btn_salvarActionPerformed
 
     private void btn_voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_voltarActionPerformed
         new Tela_inicio().setVisible(true);
@@ -186,10 +214,12 @@ public class Cadastro_usu extends javax.swing.JFrame {
 //        /* Create and display the form */
 //        java.awt.EventQueue.invokeLater(() -> new Cadastro_usu().setVisible(true));
 //    }
+    
+    private ControleCadastro c;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_salvar;
     private javax.swing.JButton btn_voltar;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbl1;
     private javax.swing.JLabel lbl2;
