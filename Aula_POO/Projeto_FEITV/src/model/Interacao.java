@@ -5,15 +5,15 @@ package model;
 public class Interacao {
     private String usuarioLogin;
     private String nomeFilme;
-    private String tipointeracao;//vai guardar oq o usu fizer 
+    private String tipoInteracao;//vai guardar oq o usu fizer 
 
     public Interacao() {
     }
 
-    public Interacao(String usuarioLogin, String nomeFilme, String tipointeracao) {
+    public Interacao(String usuarioLogin, String nomeFilme, String tipoInteracao) {
         this.usuarioLogin = usuarioLogin;
         this.nomeFilme = nomeFilme;
-        this.tipointeracao = tipointeracao;
+        this.tipoInteracao = tipoInteracao;
     }
 
     public String getUsuarioLogin() {
@@ -32,13 +32,16 @@ public class Interacao {
         this.nomeFilme = nomeFilme;
     }
 
-    public String getTipointeracao() {
-        return tipointeracao;
+    public String getTipoInteracao() {
+        return tipoInteracao;
     }
 
-    public void setTipointeracao(String tipointeracao) {
-        this.tipointeracao = tipointeracao;
+    public void setTipoInteracao(String tipoInteracao) {
+        this.tipoInteracao = tipoInteracao;
     }
+
+   
+    
     
     
 }

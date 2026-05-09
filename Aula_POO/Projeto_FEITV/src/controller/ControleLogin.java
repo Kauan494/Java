@@ -22,14 +22,14 @@ public class ControleLogin {
         Usuario usuario = new Usuario(null,tela2.getUsuario().getText(),tela2.getSenha().getText());
         Conexao conexao = new Conexao();
         try{
-            Connection conn = conexao.getConnection();
-            UsuDAO dao = new UsuDAO(conn);
+            Connection cnn = conexao.getConnection();
+            UsuDAO dao = new UsuDAO(cnn);
             ResultSet res = dao.consultar(usuario);
             if(res.next()){
                 JOptionPane.showMessageDialog(tela2, "Login efetuado", "Aviso", 
                                                 JOptionPane.INFORMATION_MESSAGE);
                 
-                Tela_principal tela3 = new Tela_principal();
+                Tela_principal tela3 = new Tela_principal(usuario,cnn);
                 tela3.setVisible(true);
                 tela2.setVisible(false);
             } else{
