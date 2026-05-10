@@ -34,6 +34,7 @@ public class Tela_inicio extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btn_cadastrar = new javax.swing.JButton();
         btn_login = new javax.swing.JButton();
+        btn_encerrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela de inicio");
@@ -63,6 +64,11 @@ public class Tela_inicio extends javax.swing.JFrame {
         btn_login.setText("Login");
         btn_login.addActionListener(this::btn_loginActionPerformed);
 
+        btn_encerrar.setBackground(new java.awt.Color(200, 40, 40));
+        btn_encerrar.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        btn_encerrar.setText("Encerrar");
+        btn_encerrar.addActionListener(this::btn_encerrarActionPerformed);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -79,7 +85,10 @@ public class Tela_inicio extends javax.swing.JFrame {
                         .addGap(113, 113, 113)
                         .addComponent(btn_cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_login)))
+                        .addComponent(btn_login))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(152, 152, 152)
+                        .addComponent(btn_encerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(121, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -93,7 +102,9 @@ public class Tela_inicio extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_cadastrar)
                     .addComponent(btn_login))
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btn_encerrar)
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -119,6 +130,10 @@ public class Tela_inicio extends javax.swing.JFrame {
         new Tela_login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn_loginActionPerformed
+
+    private void btn_encerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_encerrarActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btn_encerrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,6 +162,7 @@ public class Tela_inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_cadastrar;
+    private javax.swing.JButton btn_encerrar;
     private javax.swing.JButton btn_login;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

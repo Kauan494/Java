@@ -5,6 +5,7 @@ import dao.Conexao;
 import dao.InteracaoDAO;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import model.Interacao;
 import model.Usuario;
 import view.Tela_principal;
@@ -83,12 +84,31 @@ public class ControlePrincipal {
     
     public void removerInteracao(String nomeFilme, String tipo){
         try {
-            InteracaoDAO dao = new InteracaoDAO(this.cnn);
+            InteracaoDAO dao = new InteracaoDAO(cnn);
             
-            dao.remover(nomeFilme, nomeFilme, nomeFilme);
+            dao.remover(usuario.getUser(), nomeFilme, tipo);
             
-        } catch (Exception e) {
+        } catch (SQLException e) {
             javax.swing.JOptionPane.showMessageDialog(null, "Erro ao reamover interacao");
+        }
+    }
+    
+    public ArrayList<String> buscarPlay(String tipo){
+        try {
+            InteracaoDAO dao = new InteracaoDAO(cnn);
+            return dao.buscarFilmesPlay(usuario.getUser(), tipo);
+        } catch (SQLException e) {
+            return new ArrayList<>();
+        }
+    }
+    
+    public void excluirLista(String tipo){
+        try {
+            InteracaoDAO dao = new InteracaoDAO(cnn);
+            
+            dao.excluirLista(usuario.getUser(), tipo);
+        } catch (SQLException e) {
+            javax.swing.JOptionPane.showMessageDialog(null, "Erro ao excluir lista");
         }
     }
      

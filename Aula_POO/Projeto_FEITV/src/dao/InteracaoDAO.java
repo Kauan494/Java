@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import model.Interacao;
 
 public class InteracaoDAO {
@@ -56,4 +57,35 @@ public class InteracaoDAO {
         return rs.next();
     }
     
+    public ArrayList<String> buscarFilmesPlay(String usuario,String tipo)throws SQLException{
+        ArrayList<String> lista = new ArrayList<>();
+        
+        String sql = "SELECT nome_filme " +
+                "FROM interacoes " +
+                "WHERE usuario_login = ? " +
+                "AND tipo_interacao = ?";
+        
+        PreparedStatement statement = cnn.prepareStatement(sql);
+        statement.setString(1, usuario);
+        statement.setString(2, tipo);
+        
+        ResultSet rs = statement.executeQuery();
+        
+        while(rs.next()){
+            lista.add(rs.getString("nome_filme"));
+        }
+        return lista;
+    }
+    
+    public void excluirLista(String usuario, String tipo) throws SQLException{
+        String sql = "DELETE FROM interacoes " +
+                "WHERE usuario_login = ? " +
+                "AND tipo_interacao = ?";
+        
+        PreparedStatement statement = cnn.prepareStatement(sql);
+        statement.setString(1, usuario);
+        statement.setString(2, tipo);
+        
+        statement.execute();
+    }
 }
