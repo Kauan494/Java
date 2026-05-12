@@ -231,6 +231,7 @@ public class Tela_principal extends javax.swing.JFrame {
         btn_hist.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btn_hist.setForeground(new java.awt.Color(255, 255, 255));
         btn_hist.setText("Histórico");
+        btn_hist.addActionListener(this::btn_histActionPerformed);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -448,6 +449,11 @@ public class Tela_principal extends javax.swing.JFrame {
         inicio.setVisible(true);
         dispose();
     }//GEN-LAST:event_btn_sairActionPerformed
+
+    private void btn_histActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_histActionPerformed
+        Tela_hist tela = new Tela_hist(controle);
+        tela.setVisible(true);
+    }//GEN-LAST:event_btn_histActionPerformed
 
 //    /**
 //     * @param args the command line arguments

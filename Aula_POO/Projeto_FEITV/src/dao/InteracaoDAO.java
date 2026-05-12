@@ -57,6 +57,7 @@ public class InteracaoDAO {
         return rs.next();
     }
     
+    //Busca as interações do usu
     public ArrayList<String> buscarFilmesPlay(String usuario,String tipo)throws SQLException{
         ArrayList<String> lista = new ArrayList<>();
         

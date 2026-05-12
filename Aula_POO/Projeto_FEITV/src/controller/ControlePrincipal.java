@@ -2,10 +2,12 @@
 package controller;
 
 import dao.Conexao;
+import dao.HistoricoDAO;
 import dao.InteracaoDAO;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import model.Historico;
 import model.Interacao;
 import model.Usuario;
 import view.Tela_principal;
@@ -63,6 +65,9 @@ public class ControlePrincipal {
             model.Filme filmeEncontrado = filmeDao.buscarFilmePorNome(nomeDigitado);
             
             if(filmeEncontrado != null){
+                HistoricoDAO dao = new HistoricoDAO(cnn);
+                Historico hist = new Historico(usuario.getUser(),filmeEncontrado.getNome());
+                dao.inserir(hist);
                 tela3.mostrarFilme(filmeEncontrado);
             } else{
                 javax.swing.JOptionPane.showMessageDialog(null, "Filme nao encontrado, digite o nome corretamente!");
@@ -111,5 +116,13 @@ public class ControlePrincipal {
             javax.swing.JOptionPane.showMessageDialog(null, "Erro ao excluir lista");
         }
     }
-     
+    
+    public ArrayList<String>buscarHistorico(){
+        try {
+            HistoricoDAO dao = new HistoricoDAO(cnn);
+            return dao.buscarHistorico(usuario.getUser());
+        } catch (SQLException e) {
+            return new ArrayList<>();
+        }
+    }
 }   
